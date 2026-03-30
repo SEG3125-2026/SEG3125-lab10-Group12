@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curl Up & Dye | Book Appointment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://kit.fontawesome.com/bb29a85c45.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body id="top">
+    <nav class="navbar navbar-expand-lg top-nav sticky-top border-bottom border-light-subtle position-sticky">
+      <div class="container app-shell">
+        <a class="navbar-brand fw-semibold" href="#top">Curl Up & Dye</a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="topNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Salon</a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#shop-info-title">Shop Info</a></li>
+                <li><a class="dropdown-item" href="#reviews-title">Reviews</a></li>
+                <li><a class="dropdown-item" href="#contact-title">Contact</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Booking</a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#services-title">Services</a></li>
+                <li><a class="dropdown-item" href="#staff-title">Experts</a></li>
+                <li><a class="dropdown-item" href="#datetime-title">Date & Time</a></li>
+                <li><a class="dropdown-item" href="#payment-title">Payment</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="hero-simple border-bottom">
+      <div class="container app-shell hero-copy">
+        <p class="text-uppercase fw-semibold small mb-2">Mobile Web App - Made by Group 12
+        </p>
+        <h1 class="display-5 fw-bold mb-3">Curl Up & Dye</h1>
+        <p class="lead mb-4">
+          We are a hair salon that specializes in curly hair. We offer a variety of services including haircuts, coloring, and styling. We also sell hair products that are specifically designed for curly hair.
+        </p>
+        <a class="btn btn-light btn-lg" href="#appointment-form">Explore Services</a>
+      </div>
+    </header>
+
+    <main class="container app-shell pt-2 pb-4 pt-md-3 pb-md-5">
+      <section class="mb-4" aria-labelledby="shop-info-title">
+        <h2 id="shop-info-title" class="h5 mb-3"><i class="fa-solid fa-store me-2 section-title-icon" aria-hidden="true"></i>Shop Info</h2>
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <p class="mb-2">
+              <i class="bi bi-geo-alt-fill me-2" aria-hidden="true"></i>
+              <strong>Address:</strong> 100 Somerset St W, Ottawa, ON
+            </p>
+            <p class="mb-2">
+              <i class="bi bi-clock-fill me-2" aria-hidden="true"></i>
+              <strong>Hours:</strong> Mon-Fri 9:00 AM-5:00 PM (weekends closed)
+            </p>
+            <p class="mb-0">
+              <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>
+              <strong>Contact:</strong> (613) 345-6789 | hello@salon.ca
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-4" aria-labelledby="reviews-title">
+        <h2 id="reviews-title" class="h5 mb-3"><i class="fa-solid fa-comments me-2 section-title-icon" aria-hidden="true"></i>Reviews & Testimonials</h2>
+        <div class="row g-3">
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <p class="mb-2 text-warning" aria-label="5 star rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </p>
+                <p class="small mb-2">“Best curly cut I have had in years. They explained every step and I left with an easy routine.”</p>
+                <p class="small text-muted mb-0">- Nadia P.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <p class="mb-2 text-warning" aria-label="5 star rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </p>
+                <p class="small mb-2">“The wash and set made my curls last all week. Booking was simple and the service was on time.”</p>
+                <p class="small text-muted mb-0">- Carmen L.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <p class="mb-2 text-warning" aria-label="5 star rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                </p>
+                <p class="small mb-2">“Great silk press with clear heat protection tips. Staff was friendly and very professional.”</p>
+                <p class="small text-muted mb-0">- Janelle R.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <form id="appointment-form" class="needs-validation" novalidate>
+        <section class="card shadow-sm mb-4 sticky-top" style="top: 75px;">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h2 class="h5 mb-0">Booking Progress</h2>
+              <span class="badge bg-accent" id="progress-text">Step 1 of 5</span>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Booking progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20">
+              <div class="progress-bar bg-accent" id="progress-bar" style="width: 20%"></div>
+            </div>
+            <div class="alert alert-light border mt-3 mb-0" aria-live="polite">
+              <strong>You chose:</strong>
+              <span id="selection-summary" class="ms-1 text-muted">No service/time selected yet.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-4" aria-labelledby="services-title">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 id="services-title" class="h5 mb-0"><i class="fa-solid fa-scissors me-2 section-title-icon" aria-hidden="true"></i>1. Services</h2>
+            <span class="badge text-bg-secondary">Required</span>
+          </div>
+          <div class="row g-3">
+            <div class="col-12 col-md-4">
+              <div class="position-relative">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-light border rounded-circle service-info-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#serviceInfoModal"
+                  data-service-title="Dry Curl Sculpting"
+                  data-service-details="A dry-cut technique performed on natural curls to ensure the shape is perfect when the hair is worn down."
+                  aria-label="More info about Dry Curl Sculpting"
+                >
+                  <i class="bi bi-info-lg" ></i>
+                </button>
+                <label class="card h-100 shadow-sm option-card" for="service-sculpting">
+                  <img src="Images/Styling/curl.jpeg" class="card-img-top option-image" alt="Dry Curl Sculpting style result" />
+                  <div class="card-body">
+                    <input class="form-check-input me-2" type="radio" name="service" id="service-sculpting" value="Dry Curl Sculpting | $110 | 60 min" />
+                    <span class="fw-semibold">Dry Curl Sculpting</span>
+                    <p class="mb-1 small text-muted">$110 · 60 minutes</p>
+                    <p class="small text-muted mb-0">Dry-cut shaping for natural curls worn down.</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="position-relative">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-light border rounded-circle service-info-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#serviceInfoModal"
+                  data-service-title="The Signature Wash & Set"
+                  data-service-details="Includes a detoxifying scalp scrub, deep hydration masque, and a finger-coiled or rake and shake definition style."
+                  aria-label="More info about The Signature Wash and Set"
+                >
+                  <i class="bi bi-info-lg"></i>
+                </button>
+                <label class="card h-100 shadow-sm option-card" for="service-wash-set">
+                  <img src="Images/Styling/washAndSet.jpeg" class="card-img-top option-image" alt="Signature Wash and Set result" />
+                  <div class="card-body">
+                    <input class="form-check-input me-2" type="radio" name="service" id="service-wash-set" value="The Signature Wash & Set | $85 | 75 min" />
+                    <span class="fw-semibold">The Signature Wash & Set</span>
+                    <p class="mb-1 small text-muted">$85 · 75 minutes</p>
+                    <p class="small text-muted mb-0">Detox scrub, deep hydration, and curl definition finish.</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="position-relative">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-light border rounded-circle service-info-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#serviceInfoModal"
+                  data-service-title="The Crown Silk Press"
+                  data-service-details="For those who want a temporary straight look using high-heat protection and steam infusion to maintain curl elasticity."
+                  aria-label="More info about The Crown Silk Press"
+                >
+                  <i class="bi bi-info-lg"></i>
+                </button>
+                <label class="card h-100 shadow-sm option-card" for="service-silk-press">
+                  <img src="Images/Styling/silkPress.jpeg" class="card-img-top option-image" alt="Crown Silk Press result" />
+                  <div class="card-body">
+                    <input class="form-check-input me-2" type="radio" name="service" id="service-silk-press" value="The Crown Silk Press | $95 | 80 min" />
+                    <span class="fw-semibold">The Crown Silk Press</span>
+                    <p class="mb-1 small text-muted">$95 · 80 minutes</p>
+                    <p class="small text-muted mb-0">Temporary straight look with heat and steam protection.</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <p class="text-danger small mt-2 d-none" id="service-error">Please select a service.</p>
+        </section>
+
+        <section class="mb-4" aria-labelledby="staff-title">
+          <h2 id="staff-title" class="h5 mb-3"><i class="fa-solid fa-user-group me-2 section-title-icon" aria-hidden="true"></i>2. Experts (Optional)</h2>
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <label class="card shadow-sm option-card" for="staff-no-pref">
+                <div class="card-body d-flex align-items-start gap-3">
+                  <input class="form-check-input mt-1 flex-shrink-0" type="radio" name="staff" id="staff-no-pref" value="No preference" checked />
+                  <div class="flex-grow-1">
+                    <p class="fw-semibold mb-1">No Preference</p>
+                    <p class="mb-1 small text-muted">Best match based on next available schedule.</p>
+                    <p class="mb-0 small text-muted">Great if you want the earliest appointment options.</p>
+                  </div>
+                  <span class="rounded-circle border d-inline-flex align-items-center justify-content-center flex-shrink-0" style="width: 2.5rem; height: 2.5rem;">
+                    <i class="bi bi-person text-muted"></i>
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="card shadow-sm option-card" for="staff-sofia">
+                <div class="card-body d-flex align-items-start gap-3">
+                  <input class="form-check-input mt-1 flex-shrink-0" type="radio" name="staff" id="staff-sofia" value="Sofia" />
+                  <div class="flex-grow-1">
+                    <p class="fw-semibold mb-1">Sofia</p>
+                    <p class="mb-1 small text-muted"><strong>Role:</strong> Senior Curl Stylist</p>
+                    <p class="mb-0 small text-muted">Precision curl cuts and hydration-first styling.</p>
+                  </div>
+                  <img src="Images/People/Sofia.jpeg" alt="Sofia portrait" class="rounded-circle flex-shrink-0 border" style="width: 2.5rem; height: 2.5rem; object-fit: cover;" />
+                </div>
+              </label>
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="card shadow-sm option-card" for="staff-malik">
+                <div class="card-body d-flex align-items-start gap-3">
+                  <input class="form-check-input mt-1 flex-shrink-0" type="radio" name="staff" id="staff-malik" value="Malik" />
+                  <div class="flex-grow-1">
+                    <p class="fw-semibold mb-1">Malik</p>
+                    <p class="mb-1 small text-muted"><strong>Role:</strong> Texture Specialist</p>
+                    <p class="mb-0 small text-muted">Clean shape work and detailed finishing.</p>
+                  </div>
+                  <img src="Images/People/Malik.jpeg" alt="Malik portrait" class="rounded-circle flex-shrink-0 border" style="width: 2.5rem; height: 2.5rem; object-fit: cover;" />
+                </div>
+              </label>
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="card shadow-sm option-card" for="staff-sabrina">
+                <div class="card-body d-flex align-items-start gap-3">
+                  <input class="form-check-input mt-1 flex-shrink-0" type="radio" name="staff" id="staff-sabrina" value="Sabrina" />
+                  <div class="flex-grow-1">
+                    <p class="fw-semibold mb-1">Sabrina</p>
+                    <p class="mb-1 small text-muted"><strong>Role:</strong> Color Specialist</p>
+                    <p class="mb-0 small text-muted">Dimensional color and low-stress processing.</p>
+                  </div>
+                  <img src="Images/People/Sabrina.jpeg" alt="Sabrina portrait" class="rounded-circle flex-shrink-0 border" style="width: 2.5rem; height: 2.5rem; object-fit: cover;" />
+                </div>
+              </label>
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="card shadow-sm option-card" for="staff-anne">
+                <div class="card-body d-flex align-items-start gap-3">
+                  <input class="form-check-input mt-1 flex-shrink-0" type="radio" name="staff" id="staff-anne" value="Anne" />
+                  <div class="flex-grow-1">
+                    <p class="fw-semibold mb-1">Anne</p>
+                    <p class="mb-1 small text-muted"><strong>Role:</strong> Scalp Care Specialist</p>
+                    <p class="mb-0 small text-muted">Scalp care and long-lasting curl definition.</p>
+                  </div>
+                  <img src="Images/People/Anne.jpeg" alt="Anne portrait" class="rounded-circle flex-shrink-0 border" style="width: 2.5rem; height: 2.5rem; object-fit: cover;" />
+                </div>
+              </label>
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="card shadow-sm option-card" for="staff-link">
+                <div class="card-body d-flex align-items-start gap-3">
+                  <input class="form-check-input mt-1 flex-shrink-0" type="radio" name="staff" id="staff-link" value="Link" />
+                  <div class="flex-grow-1">
+                    <p class="fw-semibold mb-1">Link</p>
+                    <p class="mb-1 small text-muted"><strong>Role:</strong> Student Stylist</p>
+                    <p class="mb-0 small text-muted">Silk press specialist with heat-protection focus.</p>
+                  </div>
+                  <img src="Images/People/Link.jpeg" alt="Link portrait" class="rounded-circle flex-shrink-0 border" style="width: 2.5rem; height: 2.5rem; object-fit: cover;" />
+                </div>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-4" aria-labelledby="datetime-title">
+          <h2 id="datetime-title" class="h5 mb-3"><i class="fa-solid fa-calendar-check me-2 section-title-icon" aria-hidden="true"></i>3. Date and Time</h2>
+          <div class="card shadow-sm">
+            <div class="card-body row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="date">Date</label>
+                <input type="text" class="form-control reactive-field" id="date" required placeholder="Select a date" />
+                <div class="invalid-feedback">Please choose a booking date.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="time">Time</label>
+                <select class="form-select reactive-field" id="time" required disabled>
+                  <option value="" selected>Select a time slot</option>
+                  <option>09:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                  <option>12:00 PM</option>
+                  <option>01:00 PM</option>
+                  <option>02:00 PM</option>
+                  <option>03:00 PM</option>
+                  <option>04:00 PM</option>
+                </select>
+                <div class="invalid-feedback">Please choose a time slot.</div>
+              </div>
+              <div class="col-12">
+                <div id="availability-feedback" class="small text-muted" aria-live="polite"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-4" aria-labelledby="contact-title">
+          <h2 id="contact-title" class="h5 mb-3"><i class="fa-solid fa-address-card me-2 section-title-icon" aria-hidden="true"></i>4. Contact Details</h2>
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="mb-3">
+                <label class="form-label" for="name">Full name</label>
+                <input type="text" class="form-control reactive-field" id="name" required aria-describedby="nameHelp" pattern="^[A-Za-z][A-Za-z\s'-]{1,59}$" />
+                <div id="nameHelp" class="form-text">Used to hold your appointment at check-in.</div>
+                <div class="invalid-feedback">Name must contain letters only (plus spaces, apostrophes, or hyphens).</div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control reactive-field"
+                  id="email"
+                  required
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">We will send your confirmation and reminders here.</div>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="phone">Phone number</label>
+                <input
+                  type="tel"
+                  class="form-control reactive-field"
+                  id="phone"
+                  required
+                  inputmode="tel"
+                  pattern="^(?:\+?1\s?)?(?:\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]?\d{4}$"
+                  aria-describedby="phoneHelp"
+                />
+                <div id="phoneHelp" class="form-text">Format example: (613) 345-6789.</div>
+                <div class="invalid-feedback">Please provide a valid phone number.</div>
+              </div>
+
+              <div class="mb-0">
+                <label class="form-label" for="notes">Notes (optional)</label>
+                <textarea class="form-control reactive-field" id="notes" rows="3" placeholder="Allergies, sensitivities, or style goals"></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-4" aria-labelledby="payment-title">
+          <h2 id="payment-title" class="h5 mb-3"><i class="fa-solid fa-credit-card me-2 section-title-icon" aria-hidden="true"></i>5. Payment</h2>
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="mb-3">
+                <label class="form-label" for="card-name">Name on card</label>
+                <input type="text" class="form-control reactive-field" id="card-name" required pattern="^[A-Za-z][A-Za-z\s'-]{1,59}$" />
+                <div class="invalid-feedback">Enter the name shown on your card.</div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex align-items-center gap-2"><label class="form-label" for="card-number">Card number</label><i id="card-icon" class="fa-solid fa-credit-card"></i></div>
+                <input type="text" class="form-control reactive-field" id="card-number" required inputmode="numeric" maxlength="19" pattern="^(?:\d{4}[ -]?){3}\d{4}$" placeholder="1234 5678 9012 3456" />
+                <div class="invalid-feedback">Enter a valid 16-digit card number.</div>
+              </div>
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="card-expiry">Expiry (MM/YY)</label>
+                  <input type="text" class="form-control reactive-field" id="card-expiry" required maxlength="5" pattern="^(0[1-9]|1[0-2])\/\d{2}$" placeholder="MM/YY" />
+                  <div class="invalid-feedback">Enter a valid expiration date.</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="card-cvv">CVV</label>
+                  <input type="text" class="form-control reactive-field" id="card-cvv" required inputmode="numeric" maxlength="4" pattern="^\d{3,4}$" placeholder="123" />
+                  <div class="invalid-feedback">Enter a valid 3 or 4 digit CVV.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-4" aria-label="Confirmation action">
+          <div class="alert alert-secondary" role="note">
+            Cancellation policy: please give at least 24 hours notice to reschedule.
+          </div>
+          <button type="submit" id="submit-btn" class="btn bg-accent btn-lg w-100 d-none">
+            <span class="submit-label">Confirm Appointment</span>
+            <span class="spinner-border spinner-border-sm ms-2 d-none" aria-hidden="true"></span>
+          </button>
+        </section>
+      </form>
+
+      <section id="confirmation" class="d-none" aria-live="assertive">
+        <div class="alert alert-success shadow-sm">
+          <h2 class="h5">Booking Confirmed</h2>
+          <p class="mb-1" id="confirmation-text"></p>
+          <p class="mb-0"><strong>Reference #:</strong> CUD-2026-0412</p>
+        </div>
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h3 class="h6 mb-3">Find Us</h3>
+            <iframe
+              src="https://www.google.com/maps?q=45.4201,-75.7003&z=15&output=embed"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Curl Up and Dye Salon location on Google Maps"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <div class="modal fade" id="serviceInfoModal" tabindex="-1" aria-labelledby="serviceInfoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5 mb-0" id="serviceInfoTitle">Service Info</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="serviceInfoBody"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      const dateInput = document.getElementById("date");
+      const timeInput = document.getElementById("time");
+      const nameInput = document.getElementById("name");
+      const emailInput = document.getElementById("email");
+      const phoneInput = document.getElementById("phone");
+      const cardNameInput = document.getElementById("card-name");
+      const cardNumberInput = document.getElementById("card-number");
+      const cardExpiryInput = document.getElementById("card-expiry");
+      const cardCvvInput = document.getElementById("card-cvv");
+      const cardIcon = document.getElementById('card-icon');
+      const availabilityFeedback = document.getElementById("availability-feedback");
+      const summary = document.getElementById("selection-summary");
+      const serviceInputs = document.querySelectorAll('input[name="service"]');
+      const staffInputs = document.querySelectorAll('input[name="staff"]');
+      const submitBtn = document.getElementById("submit-btn");
+      const form = document.getElementById("appointment-form");
+      const serviceError = document.getElementById("service-error");
+      const confirmation = document.getElementById("confirmation");
+      const confirmationText = document.getElementById("confirmation-text");
+      const progressBar = document.getElementById("progress-bar");
+      const progressText = document.getElementById("progress-text");
+      const serviceInfoModal = document.getElementById("serviceInfoModal");
+      const serviceInfoTitle = document.getElementById("serviceInfoTitle");
+      const serviceInfoBody = document.getElementById("serviceInfoBody");
+      const allTimeSlots = Array.from(timeInput.options)
+        .slice(1)
+        .map((option) => option.value);
+      const STAFF_OFF_DAYS = {
+        Sofia: [2],
+        Malik: [3],
+        Sabrina: [1],
+        Anne: [4],
+        Link: [5],
+      };
+      const STAFF_BLOCKED_TIMES = {
+        Sofia: ["10:00 AM", "02:00 PM"],
+        Malik: ["09:00 AM", "03:00 PM"],
+        Sabrina: ["11:00 AM", "01:00 PM"],
+        Anne: ["12:00 PM", "04:00 PM"],
+        Link: ["10:00 AM", "12:00 PM"],
+      }; 
+      const cardIcons = {
+        Visa: 'fa-brands fa-cc-visa',
+        Mastercard: 'fa-brands fa-cc-mastercard',
+        Discover: 'fa-brands fa-cc-discover',
+        JCB: 'fa-brands fa-cc-jcb',
+        Unknown: 'fa-solid fa-credit-card'
+      };
+
+      const patterns = {
+        Visa: /^4/,
+        Mastercard: /^(5[1-5]|222[1-9]|22[3-9]|2[3-6]|27[01]|2720)/,
+        Amex: /^3[47]/,
+        Discover: /^(6011|622|64[4-9]|65)/,
+        Diners: /^3(0[0-5]|[68])/,
+        JCB: /^35(2[89]|[3-8][0-9])/
+      };
+
+      const BUSINESS_CLOSE_MINUTES = 17 * 60;
+      let datePicker;
+
+      const topNav = document.getElementById("topNav");
+      const topNavCollapse = topNav ? new bootstrap.Collapse(topNav, { toggle: false }) : null;
+      const tooltipTargets = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipInstances = [];
+
+      tooltipTargets.forEach((el) => {
+        const instance = new bootstrap.Tooltip(el, { trigger: "hover" });
+        tooltipInstances.push(instance);
+      });
+
+      document
+        .querySelectorAll("#topNav .nav-link:not(.dropdown-toggle), #topNav .dropdown-item")
+        .forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth < 992 && topNav?.classList.contains("show")) {
+            topNavCollapse?.hide();
+          }
+        });
+      });
+
+      document
+        .querySelectorAll('input[data-bs-toggle="tooltip"], textarea[data-bs-toggle="tooltip"], select[data-bs-toggle="tooltip"]')
+        .forEach((field) => {
+          field.addEventListener("focus", () => {
+            const tip = bootstrap.Tooltip.getInstance(field);
+            tip?.hide();
+          });
+          field.addEventListener("input", () => {
+            const tip = bootstrap.Tooltip.getInstance(field);
+            tip?.hide();
+          });
+        });
+
+      serviceInfoModal.addEventListener("show.bs.modal", (event) => {
+        const trigger = event.relatedTarget;
+        serviceInfoTitle.textContent = trigger.getAttribute("data-service-title");
+        serviceInfoBody.textContent = trigger.getAttribute("data-service-details");
+      });
+
+      function getCheckedValue(name) {
+        return document.querySelector(`input[name="${name}"]:checked`)?.value || "";
+      }
+
+      function parseServiceDuration(serviceValue) {
+        const durationText = serviceValue.split("|")[2] || "60 min";
+        const minutes = Number.parseInt(durationText, 10);
+        return Number.isFinite(minutes) ? minutes : 60;
+      }
+
+      function slotToMinutes(slot) {
+        const match = slot.match(/^(\d{2}):(\d{2})\s(AM|PM)$/);
+        if (!match) return 0;
+        let hours = Number.parseInt(match[1], 10);
+        const minutes = Number.parseInt(match[2], 10);
+        const meridiem = match[3];
+        if (hours === 12) hours = 0;
+        if (meridiem === "PM") hours += 12;
+        return hours * 60 + minutes;
+      }
+
+      function getDisabledDateFn() {
+        const selectedStaff = getCheckedValue("staff");
+        const offDays = STAFF_OFF_DAYS[selectedStaff] || [];
+
+        return (date) => {
+          const day = date.getDay();
+          const isWeekend = day === 0 || day === 6;
+          return isWeekend || offDays.includes(day);
+        };
+      }
+
+      function refreshDateAvailability() {
+        datePicker.set("disable", [getDisabledDateFn()]);
+
+        if (!dateInput.value) {
+          availabilityFeedback.textContent = "Weekends are unavailable. Stylist off-days are greyed out.";
+          return;
+        }
+
+        const selectedDate = new Date(`${dateInput.value}T12:00:00`);
+        if (getDisabledDateFn()(selectedDate)) {
+          datePicker.clear();
+          availabilityFeedback.textContent =
+            "That date is unavailable for the selected stylist. Please choose another day.";
+        }
+      }
+
+      function updateAvailableTimes() {
+        const selectedStaff = getCheckedValue("staff");
+        const selectedService = getCheckedValue("service");
+        const previousTime = timeInput.value;
+        const selectedDate = dateInput.value;
+        const duration = parseServiceDuration(selectedService || "");
+        const blockedTimes = STAFF_BLOCKED_TIMES[selectedStaff] || [];
+
+        if (!selectedDate) {
+          timeInput.value = "";
+          timeInput.disabled = true;
+          availabilityFeedback.textContent = "Choose a date first to view available times.";
+          return;
+        }
+
+        const availableTimes = allTimeSlots.filter((slot) => {
+          const startsAt = slotToMinutes(slot);
+          const endsAt = startsAt + duration;
+          const endsBeforeClose = endsAt <= BUSINESS_CLOSE_MINUTES;
+          return endsBeforeClose && !blockedTimes.includes(slot);
+        });
+
+        timeInput.innerHTML = '<option value="" selected>Select a time slot</option>';
+        availableTimes.forEach((slot) => {
+          const option = document.createElement("option");
+          option.value = slot;
+          option.textContent = slot;
+          timeInput.appendChild(option);
+        });
+
+        if (availableTimes.includes(previousTime)) {
+          timeInput.value = previousTime;
+        } else {
+          timeInput.value = "";
+        }
+
+        timeInput.disabled = false;
+        availabilityFeedback.textContent = availableTimes.length
+          ? "Only available appointment times are shown for this stylist and day."
+          : "No times are available for the selected options. Choose another date or stylist.";
+      }
+
+      function updateSelectedState(name) {
+        document
+          .querySelectorAll(`input[name="${name}"]`)
+          .forEach((input) => input.closest(".option-card").classList.remove("selected"));
+
+        const checked = document.querySelector(`input[name="${name}"]:checked`);
+        if (checked) checked.closest(".option-card").classList.add("selected");
+      }
+
+      function updateFlow() {
+        const service = getCheckedValue("service");
+        const staff = getCheckedValue("staff") || "No preference";
+        const date = dateInput.value;
+        const time = timeInput.value;
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const phone = phoneInput.value.trim();
+        const cardName = cardNameInput.value.trim();
+        const cardNumber = cardNumberInput.value.trim();
+        const cardExpiry = cardExpiryInput.value.trim();
+        const cardCvv = cardCvvInput.value.trim();
+
+        const hasDate = Boolean(date);
+        if (!hasDate && timeInput.value) {
+          timeInput.value = "";
+        }
+
+        const displayedTime = hasDate ? time : "";
+
+        if (service || date || displayedTime) {
+          summary.textContent = `Service: ${service || "-"} | Staff: ${staff} | Date: ${date || "-"} | Time: ${displayedTime || "-"}`;
+        } else {
+          summary.textContent = "No service/time selected yet.";
+        }
+
+        let step = 1;
+        if (service) step = 2;
+        if (service && date && displayedTime) step = 3;
+        if (service && date && displayedTime && name && email && phone) step = 4;
+        if (
+          service &&
+          date &&
+          displayedTime &&
+          name &&
+          email &&
+          phone &&
+          cardName &&
+          cardNumber &&
+          cardExpiry &&
+          cardCvv
+        ) {
+          step = 5;
+        }
+
+        const percentMap = { 1: 20, 2: 40, 3: 60, 4: 80, 5: 100 };
+        progressBar.style.width = `${percentMap[step]}%`;
+        progressBar.parentElement.setAttribute("aria-valuenow", String(percentMap[step]));
+        progressText.textContent = `Step ${step} of 5`;
+
+        runValidationFeedback(); // Run validation to check constraints
+
+        // Check if all fields have values AND the form is valid according to HTML5 validation state
+        const isFormFilled = Boolean(
+          service &&
+            date &&
+            displayedTime &&
+            name &&
+            email &&
+            phone &&
+            cardName &&
+            cardNumber &&
+            cardExpiry &&
+            cardCvv
+        );
+
+        const isFormValid = form.checkValidity();
+
+        const readyToConfirm = isFormFilled && isFormValid;
+        submitBtn.classList.toggle("d-none", !readyToConfirm);
+      }
+
+      function toggleInvalidGlow(inputField, condition) {
+        if (condition) {
+          inputField.classList.add("is-invalid");
+        } else {
+          inputField.classList.remove("is-invalid");
+        }
+      }
+
+      function validateNames() {
+        const nameRegex = /^[A-Za-z][A-Za-z\s'-]{1,59}$/;
+        const isNameInvalid = nameInput.value && !nameRegex.test(nameInput.value.trim());
+        nameInput.setCustomValidity(
+          isNameInvalid
+            ? "Name can only contain letters, spaces, apostrophes, or hyphens."
+            : "",
+        );
+        toggleInvalidGlow(nameInput, isNameInvalid);
+
+        const isCardNameInvalid = cardNameInput.value && !nameRegex.test(cardNameInput.value.trim());
+        cardNameInput.setCustomValidity(
+          isCardNameInvalid
+            ? "Card name can only contain letters, spaces, apostrophes, or hyphens."
+            : "",
+        );
+        toggleInvalidGlow(cardNameInput, isCardNameInvalid);
+      }
+
+      function validatePhone() {
+        const phoneRegex =
+          /^(?:\+?1\s?)?(?:\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]?\d{4}$/;
+        const isPhoneInvalid = phoneInput.value && !phoneRegex.test(phoneInput.value.trim());
+        phoneInput.setCustomValidity(
+          isPhoneInvalid
+            ? "Please enter a valid phone number."
+            : "",
+        );
+        toggleInvalidGlow(phoneInput, isPhoneInvalid);
+      }
+
+      function validateEmail() {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const isEmailInvalid = emailInput.value && !emailRegex.test(emailInput.value.trim());
+        emailInput.setCustomValidity(
+          isEmailInvalid
+            ? "Please enter a valid email address."
+            : "",
+        );
+        toggleInvalidGlow(emailInput, isEmailInvalid);
+      }
+
+      function validateCardDetails() {
+        const cardRegex = /^(?:\d{4}[ -]?){3}\d{4}$/;
+        const isCardInvalid = cardNumberInput.value && !cardRegex.test(cardNumberInput.value.trim());
+        cardNumberInput.setCustomValidity(
+          isCardInvalid
+            ? "Please enter a valid 16-digit card number."
+            : "",
+        );
+        toggleInvalidGlow(cardNumberInput, isCardInvalid);
+
+        const expiryRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;
+        let expiryError = "";
+        let isExpiryInvalid = false;
+        if (cardExpiryInput.value && !expiryRegex.test(cardExpiryInput.value.trim())) {
+          expiryError = "Enter a valid expiration date.";
+          isExpiryInvalid = true;
+        } else if (expiryRegex.test(cardExpiryInput.value.trim())) {
+          const [month, year] = cardExpiryInput.value.split("/");
+          const expiryDate = new Date(2000 + Number.parseInt(year, 10), Number.parseInt(month, 10), 0);
+          if (expiryDate < new Date()) {
+            expiryError = "Your card’s expiration year is in the past.";
+            isExpiryInvalid = true;
+          }
+        }
+        cardExpiryInput.setCustomValidity(expiryError);
+        toggleInvalidGlow(cardExpiryInput, isExpiryInvalid);
+
+        const cvvRegex = /^\d{3,4}$/;
+        const isCvvInvalid = cardCvvInput.value && !cvvRegex.test(cardCvvInput.value.trim());
+        cardCvvInput.setCustomValidity(
+          isCvvInvalid
+            ? "Enter a valid 3 or 4 digit CVV."
+            : "",
+        );
+        toggleInvalidGlow(cardCvvInput, isCvvInvalid);
+      }
+
+      function runValidationFeedback() {
+        validateNames();
+        validatePhone();
+        validateEmail();
+        validateCardDetails();
+      }
+
+      serviceInputs.forEach((input) => {
+        input.addEventListener("change", () => {
+          serviceError.classList.add("d-none");
+          updateAvailableTimes();
+          updateSelectedState("service");
+          updateFlow();
+        });
+      });
+
+      staffInputs.forEach((input) => {
+        input.addEventListener("change", () => {
+          refreshDateAvailability();
+          updateAvailableTimes();
+          updateSelectedState("staff");
+          updateFlow();
+        });
+      });
+
+      [dateInput, timeInput, nameInput, emailInput, phoneInput, cardNameInput].forEach((input) => {
+        input.addEventListener("input", updateFlow);
+        input.addEventListener("change", updateFlow);
+      });
+
+      cardNumberInput.addEventListener("input", () => {
+        const digitsOnly = cardNumberInput.value.replace(/\D/g, "").slice(0, 16);
+        cardNumberInput.value = digitsOnly.replace(/(\d{4})(?=\d)/g, "$1 ");
+        runValidationFeedback();
+        updateFlow();
+
+        //New - Determine card type for icon display
+        let type = 'Unknown';
+        for (const [card, regex] of Object.entries(patterns)) {
+          if (regex.test(digitsOnly)) {
+            type = card;
+            break;
+          }
+        }
+
+        cardIcon.className = cardIcons[type];
+      });
+
+      cardExpiryInput.addEventListener("input", () => {
+        const digitsOnly = cardExpiryInput.value.replace(/\D/g, "").slice(0, 4);
+        cardExpiryInput.value =
+          digitsOnly.length > 2
+            ? `${digitsOnly.slice(0, 2)}/${digitsOnly.slice(2)}`
+            : digitsOnly;
+        runValidationFeedback();
+        updateFlow();
+      });
+
+      cardCvvInput.addEventListener("input", () => {
+        cardCvvInput.value = cardCvvInput.value.replace(/\D/g, "").slice(0, 3);
+        updateFlow();
+      });
+
+      [nameInput, phoneInput, cardNameInput, cardNumberInput, cardExpiryInput, emailInput].forEach((input) => {
+        input.addEventListener("input", runValidationFeedback);
+        input.addEventListener("change", runValidationFeedback);
+      });
+
+      datePicker = flatpickr(dateInput, {
+        dateFormat: "Y-m-d",
+        minDate: "today",
+        disable: [getDisabledDateFn()],
+        onChange: () => {
+          updateAvailableTimes();
+          updateFlow();
+        },
+      });
+
+      refreshDateAvailability();
+      updateAvailableTimes();
+      updateSelectedState("service");
+      updateSelectedState("staff");
+      updateFlow();
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        runValidationFeedback();
+
+        if (!getCheckedValue("service")) {
+          serviceError.classList.remove("d-none");
+        }
+
+        if (!form.checkValidity() || !getCheckedValue("service")) {
+          form.classList.add("was-validated");
+          return;
+        }
+
+        const spinner = submitBtn.querySelector(".spinner-border");
+        submitBtn.disabled = true;
+        spinner.classList.remove("d-none");
+
+        setTimeout(() => {
+          spinner.classList.add("d-none");
+          submitBtn.disabled = false;
+
+          const maskedCard = cardNumberInput.value.replace(/\D/g, "").slice(-4);
+          confirmationText.textContent = `${nameInput.value.trim()}, your ${getCheckedValue("service")} appointment is booked for ${dateInput.value} at ${timeInput.value}. Payment method ending in ${maskedCard} has been saved.`;
+          confirmation.classList.remove("d-none");
+          confirmation.scrollIntoView({ behavior: "smooth" });
+        }, 700);
+      });
+    </script>
+  </body>
+</html>
