@@ -12,6 +12,8 @@ df-messenger {
   --df-messenger-user-message: #f6f7f9;
   --df-messenger-chat-background-color: #ffffff;
   --df-messenger-font-color: #0c4daf;
+  position: relative;
+  z-index: 9999;
 }
 
 body {
